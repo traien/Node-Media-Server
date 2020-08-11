@@ -29,7 +29,7 @@ const config = {
     secret: 'nodemedia2017privatekey'
   },
   trans: {
-    ffmpeg: '/usr/local/bin/ffmpeg',
+    ffmpeg: '/usr/bin/ffmpeg',
     tasks: [
       {
         app: 'live',
