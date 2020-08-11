@@ -1,8 +1,9 @@
+FROM sitkevij/ffmpeg:4.0-alpine
 FROM node:10.15.0-alpine
 
-RUN apt-get -y update
-RUN apt-get -y upgrade
-RUN apt-get install -y ffmpeg
+
+# copy ffmpeg bins from first image
+COPY --from=0 / /
 
 WORKDIR /usr/src/app
 
